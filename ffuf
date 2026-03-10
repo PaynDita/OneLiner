@@ -1,0 +1,8 @@
+ffuf -u http://target.com -w /usr/share/wordlists/dirb/common.txt -e .php,.txt,.bak,.zip -recursion -recursion-depth 2 -v -mc 200,301,302 -t 50
+
+
+-------------------------------------
+
+-e .php,.txt,.bak: Searches for specific file extensions (critical for finding backups).
+-t 50: Increases speed with 50 threads.
+-mc 200,301,302: Includes redirects, which often lead to sensitive login panels.
