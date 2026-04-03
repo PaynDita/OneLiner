@@ -1,0 +1,1 @@
+python3 -c "from pwn import p64; print(b''.join([p64(i) for i in [hex_value, hex_value, hex-value, hex_value]]).decode())"
